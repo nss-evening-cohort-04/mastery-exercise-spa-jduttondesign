@@ -1,0 +1,23 @@
+
+body{
+background-color: lightblue;
+}
+
+.card{
+ padding: 10, 25, 10, 25;
+ background-color: #F0F8FF;
+ width: 200px;
+height: 200px;
+ font-family: helvetica, arial, georgia, sans-serif;
+};
+
+.border-style{
+	display: dotted;
+	color: black;
+};
+
+
+
+
+
+
