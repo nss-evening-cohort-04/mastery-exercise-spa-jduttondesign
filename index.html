@@ -1,21 +1,34 @@
 <!-- XXXCreate an array of cars in the inventory.json file (see example structure below). Put at least three cars in the array.
-When your page first loads, you need to use an XHR to load the contents of the JSON file, and parse them into a native JavaScript object.
-Loop over your array of cars and build up an HTML string to build a card for each car. 
+
+xxxWhen your page first loads, you need to use an XHR to load the contents of the JSON file, and parse them into a native JavaScript object.
+
+xxxLoop over your array of cars and build up an HTML string to build a card for each car. 
+
 xxxAlso, use Bootstrap to create rows. Each row should contain 3 columns. Make sure you have a parent element with a class of container. Hint: You must build up the entire string of columns/rows before injecting into the DOM. Use a counter variable to know when to close a row after three columns.
+
 XXXPut a standard Bootstrap navbar element at the top of your page.
+
 XXXPut a text input field in the navigation bar.
+
 Make sure you display all properties of the car in the DOM. Basic styling is up to you.
 XXXMake sure that each car card element has a CSS class which adds a black border around it.
+
 When you click on one of the car elements, change the width of the border to a higher value, and change the background color to any other color of your choosing.
 Also, on click of the car element, clear the value of the text input in the navbar, and put the cursor in the text input.
 When you start typing into the navbar's text input, the description, and only that property, of the currently selected car should be bound to what you are typing in and match it exactly.
 
 Technical Requirements
+
 Create one global variable (e.g. CarLot) and use the IIFE pattern to augment it two times in separate JavaScript files.
+
 The first IIFE should add a public function (e.g. loadInventory) that loads the inventory.json file and stores the inventory in a private variable. It should also expose a public getter to read the array of cars (e.g. getInventory).
+
 The second IIFE should augment the original one with a function that creates all of the eventHandlers that you need for the application. Name the function activateEvents.
+
 The final IIFE should augment the object with two more functions. One function resets the border thickness and background color for each car element back to the original values. The other function changes the thickness of the border of a car element, and changes its background color. The function must accept two arguments.
+
 A car DOM element that was clicked on.
+
 A color name of your choice (see behavior requirement 5 above). -->
 
 
@@ -28,7 +41,8 @@ A color name of your choice (see behavior requirement 5 above). -->
 </head>
 
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
+
+<!-- <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
   </div>
 
@@ -40,28 +54,35 @@ A color name of your choice (see behavior requirement 5 above). -->
 </form>
 </nav>
 
-
-<div>
+    <div>
         <input id="input" type="text"></input>
         <button id="create">Create</button><br>
     </div>
+ -->
     
 <!--Bootstrap cols-->
-<div class="row">
+<!-- <div class="row">
   <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
   <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
-  <!-- Add the extra clearfix for only the required viewport -->
+  Add the extra clearfix for only the required viewport
   <div class="clearfix hidden-sm-up"></div>
 
   <div class="col-xs-6 col-sm-3">Nissan</div>
   <div class="col-xs-6 col-sm-3">Toyota</div>
    <div class="col-xs-6 col-sm-3">Jeep</div>
-</div>
+</div> -->
 
-<div class="container" id="container"></div>
+<div id="output"></div>
 
-<!-- <script src="Events.js"></script> -->
-<script src="CarLot.js"></script>
-<script src="quiz.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<!-- <script type="text/javascript" src="eventhandlers.js"</script> -->
+<script type="text/javascript" src="eventhandlers.js"></script>
+<!-- <script type="text/javascript" src="domhandler.js"></script> -->
+<!-- <script type="text/javascript" src="quiz.js"></script> -->
 </body>
 </html>
