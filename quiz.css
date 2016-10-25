@@ -1,21 +1,28 @@
-
 body{
-background-color: lightblue;
+	background-color: lightblue;
+}
+
+.my-border{
+	border-width: 3px;
+	border-style: solid;
 }
 
 .card{
- padding: 10, 25, 10, 25;
- background-color: #F0F8FF;
- width: 200px;
-height: 200px;
- font-family: helvetica, arial, georgia, sans-serif;
-};
+	padding: 10, 25, 10, 25;
+	background-color: #F0F8FF;
+	width: 200px;
+	height: 200px;
+ 	font-family: helvetica, arial, georgia, sans-serif;
+}
 
-.border-style{
-	display: dotted;
-	color: black;
-};
+.carCard{
+	/*background: red;*/
+	border: 2px solid black;
+}
 
+.carCardSelected {
+	border: 5px solid red;
+}
 
 
 

@@ -1,4 +1,6 @@
+
 //wrap in iffe
+//click 1st box store what i clicked on, put focus on box inside the event, set value of this box
 
 var CarLot = (function(oldCarLot){
 
@@ -15,9 +17,8 @@ var CarLot = (function(oldCarLot){
         for (var i = 0; i < cars.length; i++) {
             currentCar = cars[i];
 
-
-            carOutput += `<div class="carCard col-md-3 unselected" id="${currentCar.make}-${currentCar.model}"          style="border-color:${currentCar.color}">`;
-            carOutput += `<h2>${currentCar.year} ${currentCar.make} ${currentCar.model}</h2>`;
+            carOutput += `<div class="carCard col-md-4 unselected" id="Card-${currentCar.model}">`;
+            carOutput += `<h1>${currentCar.year} ${currentCar.make} ${currentCar.model}</h1>`;//style="border-color:${currentCar.color}
             carOutput += `<h4>Color: ${currentCar.color}</h4>`;
             carOutput += `<h4>Price: $${currentCar.price}</h4>`;
                 // If statement to display more meaningful information other than 'false'
@@ -34,6 +35,11 @@ var CarLot = (function(oldCarLot){
 
     // Now that the DOM is loaded, establish all the event listeners needed
         CarLot.activateEvents();
+
+        var inputBox = document.getElementById('chatinput');
+        inputBox.onkeyup = function(){
+        document.getElementById('printchatbox').innerHTML = inputBox.value;
+}
     }
 
     return oldCarLot;
