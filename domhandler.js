@@ -16,11 +16,10 @@ var CarLot = (function(oldCarLot){
 
         for (var i = 0; i < cars.length; i++) {
             currentCar = cars[i];
-
             carOutput += `<div class="carCard col-md-4 unselected" id="Card-${currentCar.model}">`;
             carOutput += `<h1>${currentCar.year} ${currentCar.make} ${currentCar.model}</h1>`;//style="border-color:${currentCar.color}
             carOutput += `<h4>Color: ${currentCar.color}</h4>`;
-            carOutput += `<h4>Price: $${currentCar.price}</h4>`;
+            carOutput += `<h4>Price: ${currentCar.price}</h4>`;
                 // If statement to display more meaningful information other than 'false'
                 if (!currentCar.purchased) {
                     carOutput += `<h5>Available for Purchase: Yes</h5>`; 
