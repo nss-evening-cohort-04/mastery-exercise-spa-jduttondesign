@@ -1,10 +1,10 @@
 
 var CarLot = (function(oldCarLot){
 
-var createCard = document.getElementById("create");
-var Submitbtn = document.getElementById("submit");
-var userInput = document.getElementById("chatinput");
-var selectedCard;
+    var createCard = document.getElementById("create");
+    var Submitbtn = document.getElementById("submit");
+    var userInput = document.getElementById("chatinput");
+    var selectedCard;
 
 
     oldCarLot.activateEvents = function () {
@@ -17,7 +17,7 @@ var selectedCard;
                 
                 // When any card is clicked, remove the 'hidden' class from the input field so that the user can type in the field.
                 selectedCard = event.currentTarget;
-                selectedCard.style.background = 'pink';
+                selectedCard.style.background = 'red';
                 
                 // Set the input to an empty string
                 userInput.value = "";
