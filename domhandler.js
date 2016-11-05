@@ -35,10 +35,10 @@ var CarLot = (function(oldCarLot){
     // Now that the DOM is loaded, establish all the event listeners needed
         CarLot.activateEvents();
 
-        var inputBox = document.getElementById('chatinput');
-        inputBox.onkeyup = function(){
-        document.getElementById('printchatbox').innerHTML = inputBox.value;
-}
+//         var inputBox = document.getElementById('chatinput');
+//         inputBox.onkeyup = function(){
+//         document.getElementById('printchatbox').innerHTML = inputBox.value;
+// }
     }
 
     return oldCarLot;
