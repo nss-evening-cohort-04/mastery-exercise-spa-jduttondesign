@@ -1,0 +1,29 @@
+
+{
+  "cars": [
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "color": "blue",
+      "year": "2006",
+      "price": "8999",
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },
+	{
+	"make": "Toyota",
+	"model": "Avalon",
+	"color": "green",
+	"year": "2013",
+	"price": "15000",
+	"description": "This car has low miles 15000 and garage kept. Great car, must sell."
+	},
+	{
+	"make": "Jeep",
+	"model": "Cherokee",
+	"color": "red",
+	"year": "2012",
+	"price": "10000",
+	"description": "This car has 25000 miles and has new tires."
+	}
+		]
+}

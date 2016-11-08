@@ -1,0 +1,2 @@
+CarLot.loadInventory();
+CarLot.getInventory();
